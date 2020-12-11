@@ -21,8 +21,18 @@
         <h3>Fill the form below to know your Akan name. </h3>
     </div>
     <div class="output">
-        
-
+        <form onsubmit="event.preventDefault()">
+            <div class="form-group">
+                <label for="year">Year</label>
+                <input type="text"
+                required
+                id="year"
+                max="2019"
+                min="1990"
+                placeholder="1980"
+                max-length="4"
+                min-length="4"
+                class="form-control">
     </div>
 
 
