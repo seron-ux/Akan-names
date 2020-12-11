@@ -21,7 +21,7 @@ input {
     display: inline-block;
   }
   button[type=submit] {
-    background-color:red;
+    background-color:blue;
     color: white;
     padding: 10px 15px;
     border: none;
