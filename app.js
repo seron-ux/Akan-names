@@ -31,6 +31,20 @@ function getName(){
 
     //validating
     if(day<=0||day>31)
-    alert("please enter a valid day")
+    alert("please enter a valid day");
+    else if (month<0||month ==2 &&day>29)
+    alert("please enter a valid day");
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        )
 
 }
