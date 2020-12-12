@@ -41,15 +41,9 @@ function getName(){
     if(male.checked==true){
         alert("You were born on " +daysOfWeek[birthDay]+ "and your akan name is" +maleNames[birthDay])
     }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        )
-
+else if(female.checked==true){
+    alert("You were born on" +daysOfWeek[birthDay]+ "and your akan name" + femaleNames[birthDay])
 }
+        
+}
+
