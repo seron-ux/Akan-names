@@ -11,9 +11,10 @@
 </head>
 
 <body>
-    <div class= "container">
+    <div class="container">
         <div class="jumbotron" id="top">
-            <p>Akan naming is derived from Ghanian's culture.child's name is determined by factors <br>sorrounding his or her  birth. </p>
+            <p>Akan naming is derived from Ghanian's culture.child's name is determined by factors <br>sorrounding his
+                or her birth. </p>
         </div>
     </div>
 
@@ -24,79 +25,41 @@
         <form onsubmit="event.preventDefault()">
             <div class="form-group">
                 <label for="year">Year</label>
-                <input type="text"
-                required
-                id="year"
-                max="2020"
-                min="1990"
-                placeholder="2000"
-                max-length="3"
-                min-length="3"
-                class="form-control">
-    </div>
+                <input type="text" required id="year" max="2020" min="1990" placeholder="2000" max-length="3"
+                    min-length="3" class="form-control">
+            </div>
 
-    <div class="form-group">
-        <label for="month">Month</label>
-        <input type="text"
-        placeholder="01"
-        id="month"
-        maxlength="2"
-        min="1"
-        max="12"
-        min-length="1"
-        required
-         class="form-control">
-    </div>
+            <div class="form-group">
+                <label for="month">Month</label>
+                <input type="text" placeholder="01" id="month" maxlength="2" min="1" max="12" min-length="1" required
+                    class="form-control">
+            </div>
 
-    <div class=form-group>
-        <label for="day">Day</label>
-        <input type="text"
-        placeholder="05"
-        id="day"
-        max-length="3"
-        min="1"
-        max="31"
-        min-length="3"
-        required
-        class="form-control"
+            <div class=form-group>
+                <label for="day">Day</label>
+                <input type="text" placeholder="05" id="day" max-length="3" min="1" max="31" min-length="3" required
+                    class="form-control"> </div>
+                <div class="form-group">
+                    <div>
+                        <label for="radio" class="radio-inline">
+                            <input type="radio" value="male" name="gender" id="male" required />
+                            Male </label><br />
+                        <label for="radio" class="radio-inline">
+                            <input type="radio" value="female" name="gender" id="female" required />
+                            Female
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" onclick="getName()" onsubmit="event.preventDefault()"
+                class="btn btn-outline-primary">submit</button>
+            <button type="Reset" onclick="getName()" onsubmit="event.preventDefault()"
+                class="btn btn-outline-primary">Reset</button>
+        </form>
     </div>
-    <div class="form-group">
-        <div>
-        <label for="radio" class="radio-inline">
-        <input
-        type="radio"
-        value="male"
-        name="gender"
-        id="male"
-        required
-        />
-        Male </label
-        ><br />
-        <label for="radio" class="radio-inline">
-        <input
-        type="radio"
-        value="female"
-        name="gender"
-        id="female"
-        required
-        />
-        Female
-        </label>
-      </div>
-      </div>
     </div>
-    <button type="submit" onclick="getName()" onsubmit="event.preventDefault()" class="btn btn-outline-primary">submit</button>
-    <button type="Reset" onclick="getName()" onsubmit="event.preventDefault()" class="btn btn-outline-primary">Reset</button>
-   </form>
-   </div>
-   </div>
-  </div>
-  <footer>
-    <div class="footer">
     </div>
-  </footer>
-
-
+    <script src="app.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
