@@ -1,6 +1,6 @@
 //declaring variables
 
-var daysOfWeek=[
+var daysOfWeek = [
     "Sunday",
     "Monday",
     "Tuesday",
@@ -10,7 +10,7 @@ var daysOfWeek=[
     "Saturday",
 ];
 
-var femaleNames=[
+var femaleNames = [
     "Akosua",
     "Adwoa",
     "Abenaa",
@@ -19,31 +19,40 @@ var femaleNames=[
     "Afua",
     "Ama",
 ];
+var maleNames=[
+    "Kwasi",
+    "Kwadwo",
+    "Kwabena",
+    "Kwaku",
+    "Yaw",
+    "Kofi",
+    "Kwame",
+]
 
 
 // calling function
-function getName(){
-    var year=parseInt(document.getElementById("year").value);
-    var month =parseInt(document.getElementById("month").value);
-    var day=parseInt(document.getElementById("day").value);
+function getName() {
+    var year = parseInt(document.getElementById("year").value);
+    var month = parseInt(document.getElementById("month").value);
+    var day = parseInt(document.getElementById("day").value);
     var male = document.getElementById("male");
     var female = document.getElementById("female");
 
     //validating
-    if(day<=0||day>31)
-    alert("please enter a valid day");
-    else if (month<0||month ==2 &&day>29)
-    alert("please enter a valid day");
+    if (day <= 0 || day > 31)
+        alert("please enter a valid day");
+    else if (month < 0 || month == 2 && day > 29)
+        alert("please enter a valid day");
 
-    var day=new Date(year + "/" + month + "/" + day);
+    var day = new Date(year + "/" + month + "/" + day);
 
-    var birthDay=day.getDay();
+    var birthDay = day.getDay();
     if(male.checked==true){
-        alert("You were born on " +daysOfWeek[birthDay]+ "and your akan name is" +maleNames[birthDay])
-    }
-else if(female.checked==true){
-    alert("You were born on" +daysOfWeek[birthDay]+ "and your akan name" + femaleNames[birthDay])
-}
-        
+        alert("You were born on " +daysOfWeek[birthDay]+ " and your akan name is " + maleNames[birthDay])
+     }
+    
+     if(female.checked==true){
+        alert("You were born on " +daysOfWeek[birthDay]+ " and your akan name is " + femaleNames[birthDay])
+     }
 }
 
