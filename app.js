@@ -19,7 +19,7 @@ var femaleNames = [
     "Afua",
     "Ama",
 ];
-var maleNames=[
+var maleNames = [
     "Kwasi",
     "Kwadwo",
     "Kwabena",
@@ -47,12 +47,12 @@ function getName() {
     var day = new Date(year + "/" + month + "/" + day);
 
     var birthDay = day.getDay();
-    if(male.checked==true){
-        alert("You were born on " +daysOfWeek[birthDay]+ " and your akan name is " + maleNames[birthDay])
-     }
-    
-     if(female.checked==true){
-        alert("You were born on " +daysOfWeek[birthDay]+ " and your akan name is " + femaleNames[birthDay])
-     }
+    if (male.checked == true) {
+        alert("You were born on " + daysOfWeek[birthDay] + " and your akan name is " + maleNames[birthDay])
+    }
+
+    if (female.checked == true) {
+        alert("You were born on " + daysOfWeek[birthDay] + " and your akan name is " + femaleNames[birthDay])
+    }
 }
 
