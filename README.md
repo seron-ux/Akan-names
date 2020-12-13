@@ -20,6 +20,13 @@
 - easy-to-understand
 - use atom . or code . to open the clone repo on Atom or VS-code respectively
 
+
+## Behaviour Driven Development(BDD)
+
+- Page loads and a form is displayed.
+- The users enters the form details and select radios.
+- Click submit and their Akan names is displayed on alert.
+
 ## Known Bugs
 
 My webpage is not quite responsive, but i am working on making it work better.
