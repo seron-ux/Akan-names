@@ -4,8 +4,8 @@
   margin:0;
 }
 #top {
-background-color:bisque;
-color:blue;
+background-color:coral;
+color:white;
 }
 h3{
   font-style:initial;
@@ -58,5 +58,13 @@ input {
     background-repeat:no-repeat;
     background-size: cover;
   }
-    
   
+  footer{
+    background-color: coral;
+    text-align:center;
+    font-size: 15px;
+    color:white;
+
+  }
+
+    
